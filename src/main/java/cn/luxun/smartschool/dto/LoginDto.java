@@ -1,9 +1,9 @@
-package cn.luxun.smartschool.entity;
+package cn.luxun.smartschool.dto;
 
 import lombok.Data;
 
 @Data
-public class LoginForm {
+public class LoginDto {
 
     private String username;
 
