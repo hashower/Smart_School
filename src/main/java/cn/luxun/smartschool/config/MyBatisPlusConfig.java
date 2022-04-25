@@ -1,4 +1,4 @@
-package cn.luxun.blog.config;
+package cn.luxun.smartschool.config;
 
 
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 //扫包，将此包下的接口生成代理实现类，并且注册到spring容器中
-@MapperScan("cn.luxun.blog.mapper")
+@MapperScan("cn.luxun.smartschool.mapper")
 public class MyBatisPlusConfig {
 
 	// 分页插件

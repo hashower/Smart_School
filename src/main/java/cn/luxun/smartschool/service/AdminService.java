@@ -1,4 +1,4 @@
-package cn.luxun.smartschool.cn.luxun.smartschool;
+package cn.luxun.smartschool.service;
 
 import cn.luxun.smartschool.entity.Admin;
 import com.baomidou.mybatisplus.extension.service.IService;

@@ -4,6 +4,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/sms/adminController")
-public class AdminController {
+@RequestMapping("/sms/studentController")
+public class StudentController {
 }

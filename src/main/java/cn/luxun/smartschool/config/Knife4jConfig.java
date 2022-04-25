@@ -1,4 +1,4 @@
-package cn.luxun.blog.config;
+package cn.luxun.smartschool.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,22 +14,22 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
 @Configuration
 @EnableSwagger2WebMvc
 @Import(BeanValidatorPluginsConfiguration.class)
-public class Knife4jConfiguration {
+public class Knife4jConfig {
 
 	@Bean(value = "defaultApi2")
 	public Docket defaultApi2() {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.apiInfo(new ApiInfoBuilder()
-						.title("SpringBoot-Blog RESTful APIs")
-						.description("# SpringBoot-Blog RESTful APIs")
+						.title("SpringBoot-SmartSchool RESTful APIs")
+						.description("#atguigu 智慧校园")
 						.termsOfServiceUrl("https://www.zhaozhenyu.cn/")
 						.version("1.0")
 						.build())
 				//分组名称
-				.groupName("2.X版本")
+				.groupName("smartschool")
 				.select()
 				//这里指定Controller扫描包路径
-				.apis(RequestHandlerSelectors.basePackage("cn.luxun.blog.controller"))
+				.apis(RequestHandlerSelectors.basePackage("cn.luxun.smartschool.controller"))
 				.paths(PathSelectors.any())
 				.build();
 	}

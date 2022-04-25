@@ -1,2 +1,9 @@
-package cn.luxun.smartschool.mapper;public interface TeacherMapper {
+package cn.luxun.smartschool.mapper;
+
+import cn.luxun.smartschool.entity.Teacher;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
+public interface TeacherMapper extends BaseMapper<Teacher> {
 }

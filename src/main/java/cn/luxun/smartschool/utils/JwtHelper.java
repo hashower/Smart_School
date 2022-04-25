@@ -1,4 +1,4 @@
-package com.atguigu.myzhxy.util;
+package cn.luxun.smartschool.utils;
 
 import io.jsonwebtoken.*;
 import org.springframework.util.StringUtils;

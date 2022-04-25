@@ -1,8 +1,7 @@
 package cn.luxun.smartschool.service;
 
-import cn.luxun.smartschool.entity.Admin;
-import cn.luxun.smartschool.entity.Clazz;
+import cn.luxun.smartschool.entity.Grade;
 import com.baomidou.mybatisplus.extension.service.IService;
 
-public interface ClazzService extends IService<Clazz> {
+public interface GradeService extends IService<Grade> {
 }
