@@ -52,4 +52,6 @@ public class AdminController {
 	public Result deleteAdminByIds(@RequestBody List<Integer> ids) {
 		return adminService.deleteAdminByIds(ids);
 	}
+
+
 }
