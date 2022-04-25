@@ -34,4 +34,11 @@ public interface ClazzService extends IService<Clazz> {
 	 * @return
 	 */
 	Result deleteClazzByIds(List<Integer> ids);
+
+	/**
+	 * 获取所有班级
+	 *
+	 * @return
+	 */
+	Result getAllClazz();
 }

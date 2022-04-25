@@ -45,4 +45,10 @@ public class ClazzServiceImpl extends ServiceImpl<ClazzMapper, Clazz> implements
 		this.removeByIds(ids);
 		return Result.fail().message("删除成功");
 	}
+
+	@Override
+	public Result getAllClazz() {
+		List<Clazz> list = this.list(new LambdaQueryWrapper<>());
+		return Result.ok(list);
+	}
 }

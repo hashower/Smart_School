@@ -18,6 +18,16 @@ public class ClazzController {
 	}
 
 	/**
+	 * 获取所有班级
+	 *
+	 * @return
+	 */
+	@GetMapping("/getClazzs")
+	public Result getAllClazz() {
+		return clazzService.getAllClazz();
+	}
+
+	/**
 	 * 班级分页
 	 *
 	 * @param pageNo
