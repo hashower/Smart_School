@@ -35,4 +35,11 @@ public interface GradeService extends IService<Grade> {
 	 * @return
 	 */
 	Result deleteGradeByIds(List<Integer> ids);
+
+	/**
+	 * 获得所有班级
+	 *
+	 * @return
+	 */
+	Result getAllGrades();
 }

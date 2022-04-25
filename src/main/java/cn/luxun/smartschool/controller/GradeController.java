@@ -17,8 +17,19 @@ public class GradeController {
 		this.gradeService = gradeService;
 	}
 
+
 	/**
-	 * 根据分页获取班级
+	 * 获得所有班级
+	 *
+	 * @return
+	 */
+	@GetMapping("/getGrades")
+	public Result getAllGrades() {
+		return gradeService.getAllGrades();
+	}
+
+	/**
+	 * 根据分页获取班级z
 	 *
 	 * @param pageNo
 	 * @param pageSize
@@ -26,9 +37,7 @@ public class GradeController {
 	 * @return
 	 */
 	@GetMapping("/getGrades/{pageNo}/{pageSize}")
-	public Result getGradesByPage(@PathVariable("pageNo") Integer pageNo,
-	                              @PathVariable("pageSize") Integer pageSize,
-	                              String gradeName) {
+	public Result getGradesByPage(@PathVariable("pageNo") Integer pageNo, @PathVariable("pageSize") Integer pageSize, String gradeName) {
 		return gradeService.getGradesByPage(pageNo, pageSize, gradeName);
 	}
 
